@@ -1,4 +1,4 @@
-token: "yourtoken"           # Lichess OAuth2 Token
+token: "vYkpWwlzr4O0alQk"           # Lichess OAuth2 Token
 url: "https://lichess.org/"  # Lichess base URL
 
 engine:                      # Engine settings
@@ -25,7 +25,7 @@ engine:                      # Engine settings
 #   cpuct: 3.1
   uci_options:               # Arbitrary UCI options passed to the engine
     Move Overhead: 100       # Increase if your bot flags games too often
-    Threads: 7               # Max CPU threads the engine can use
+    Threads: 4               # Max CPU threads the engine can use
     Hash: 400                # Max memory (in megabytes) the engine can allocate
 #   go_commands:             # Additional options to pass to the UCI go command
 #     nodes: 1               # Search so many nodes only.
