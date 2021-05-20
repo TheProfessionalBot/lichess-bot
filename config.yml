@@ -1,9 +1,9 @@
-token: "vYkpWwlzr4O0alQk"           # Lichess OAuth2 Token
+token: "TKGj9itLaHHlcilB"           # Lichess OAuth2 Token
 url: "https://lichess.org/"  # Lichess base URL
 
 engine:                      # Engine settings
   dir: "./"                  # DIR containing engines, relative to this project
-  name: "stockfish"    # Binary name of the engine to use
+  name: "stockfish.exe"    # Binary name of the engine to use
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent time
   polyglot:
@@ -48,12 +48,12 @@ move_overhead: 4000          # Increase if your bot flags games too often
 
 correspondence:
     move_time: 60            # Time in seconds to search in correspondence games
-    checkin_period: 7200     # How often to check for opponent moves in correspondence games that have been disconnected from
+    checkin_period: 60       # How often to check for opponent moves in correspondence games that have been disconnected from
     disconnect_time: 30      # Time before disconnecting from a correspondence game
     ponder: false            # Ponder in correspondence games the bot is connected to
 
 challenge:                   # Incoming challenges
-  concurrency: 1             # Number of games to play simultaneously
+  concurrency: 80            # Number of games to play simultaneously
   sort_by: "best"            # Possible values: "best", "first"
   accept_bot: true           # Accepts challenges coming from other bots
   only_bot: false            # Accept challenges by bots only
@@ -63,15 +63,15 @@ challenge:                   # Incoming challenges
   min_base: 0                # Minimum amount of base time to accept a challenge
   variants:                  # Chess variants to accept (http://lichess.org/variant)
     - standard
-    - fromPosition
-    - antichess
-    - atomic
+#   - fromPosition
+#   - antichess
+#   - atomic
     - chess960
-    - crazyhouse
-    - horde
-    - kingOfTheHill
-    - racingKings
-    - threeCheck
+#   - crazyhouse
+#   - horde
+#   - kingOfTheHill
+#   - racingKings
+#   - threeCheck
   time_controls:             # Time controls to accept
     - bullet
     - blitz
